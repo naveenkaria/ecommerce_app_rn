@@ -1,1 +1,1 @@
-"# ecommerce_app_rn" 
+"This is an e-commerce app which is build on react native" 
