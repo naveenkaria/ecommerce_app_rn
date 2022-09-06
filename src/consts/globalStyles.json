@@ -1,0 +1,13 @@
+{
+            "fontsize-small":10,
+            "fontsize-medium":15,
+            "fontsize-large":20,
+            "fontsize-Xlarge":25,
+            "space-top":5,
+            "space-bottom":5,
+            "padding-vertical":10,
+            "padding-horizontal":10,
+            "margin-vertical":10,
+            "margin-horizontal":10,
+            "border-radius":5
+}
