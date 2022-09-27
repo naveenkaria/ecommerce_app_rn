@@ -28,17 +28,20 @@ export default function Login({navigation}) {
           </TouchableOpacity>
         </View>
         <View style={styles.container4}>
-          <TouchableOpacity activeOpacity={0.8} style={styles.login_button}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('tab_bar')}
+            activeOpacity={0.8}
+            style={styles.login_button}>
             <Text style={styles.login_button_text}>Login</Text>
           </TouchableOpacity>
-          <Text style={styles.signup_text}>
-            Don't have account?{' '}
+          <View style={styles.linkContainer}>
+            <Text style={styles.signup_text}>Don't have account?</Text>
             <TouchableOpacity
               onPress={() => navigation.navigate('signup')}
               activeOpacity={0.9}>
               <Text style={styles.signup_link_text}> Signup</Text>
             </TouchableOpacity>
-          </Text>
+          </View>
         </View>
       </View>
     </KeyboardAwareScrollView>

@@ -4,6 +4,7 @@ import {globalStyle, color} from '../../consts';
 const styles = StyleSheet.create({
   keyboard_avoid_view: {
     flex: 1,
+    backgroundColor: color['background-color'],
   },
   main_container: {
     flex: 1,
@@ -11,7 +12,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: globalStyle['padding-horizontal'],
-    backgroundColor: color['white-color'],
+    backgroundColor: color['background-color'],
   },
   container2: {
     flex: 1.5,
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
   container2_text: {
     fontSize: globalStyle['fontsize-Xlarge'] + 10,
     color: color['black-color'],
-    fontFamily: 'Montserrat-Bold',
+    fontFamily: globalStyle['fontfamily-bold'],
   },
   container3_first_text: {
     fontSize: globalStyle['fontsize-Xlarge'],
@@ -40,50 +41,57 @@ const styles = StyleSheet.create({
   container3_secondary_text: {
     fontSize: globalStyle['fontsize-medium'],
     color: color['secondary-color'],
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: globalStyle['fontfamily-medium'],
     marginTop: globalStyle['space-top'] + 5,
   },
   input_container: {
     width: '100%',
-    height: 50,
+    height: globalStyle['height'],
     marginVertical: globalStyle['margin-vertical'] + 5,
   },
   input_style: {
     borderBottomColor: color['border-color'],
     borderBottomWidth: 1,
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: globalStyle['fontfamily-medium'],
     fontSize: globalStyle['fontsize-medium'],
     color: color['black-color'],
-    marginVertical: 5,
+    marginVertical: globalStyle['margin-vertical'] - 5,
   },
   forgot_password_text: {
     textAlign: 'right',
     fontSize: globalStyle['fontsize-regular'],
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: globalStyle['fontfamily-medium'],
     color: color['black-color'],
   },
   login_button: {
-    height: 60,
+    height: globalStyle['height'] + 10,
     width: '100%',
     borderRadius: globalStyle['border-radius'],
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: color['primary-color'],
+    // ...globalStyle['shadow-effect'],
   },
   login_button_text: {
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: globalStyle['fontfamily-medium'],
     fontSize: globalStyle['fontsize-large'],
     color: color['white-color'],
   },
   signup_text: {
     textAlign: 'center',
-    marginTop: globalStyle['space-top'] + 15,
     fontSize: globalStyle['fontsize-regular'],
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: globalStyle['fontfamily-medium'],
   },
   signup_link_text: {
     color: color['primary-color'],
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: globalStyle['fontfamily-bold'],
+  },
+  linkContainer: {
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    marginTop: globalStyle['space-top'] + 10,
   },
 });
 

@@ -20,8 +20,6 @@ export default function VerifyOtp({navigation}) {
             <TextInput placeholder="0" style={styles.input_style} />
             <TextInput placeholder="0" style={styles.input_style} />
             <TextInput placeholder="0" style={styles.input_style} />
-            <TextInput placeholder="0" style={styles.input_style} />
-            <TextInput placeholder="0" style={styles.input_style} />
           </View>
           <TouchableOpacity
             onPress={() => navigation.navigate('changepassword')}

@@ -1,6 +1,7 @@
 import React from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {color} from './src/consts';
 
 import Navigation from './src/navigations';
 
@@ -14,7 +15,10 @@ function App() {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <StatusBar
+        backgroundColor={color['background-color']}
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+      />
       <Navigation />
     </SafeAreaView>
   );
