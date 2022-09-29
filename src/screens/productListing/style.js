@@ -8,16 +8,13 @@ export const styles = StyleSheet.create({
     paddingHorizontal: globalStyle['padding-horizontal'],
     backgroundColor: color['background-color'],
   },
-  notificationContainer: {
-    height: globalStyle.height + 80,
-    width: '100%',
-    borderRadius: globalStyle['border-radius'],
-    marginBottom: globalStyle['space-bottom'] + 5,
-    elevation: 1,
+  categoryContanier: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    marginTop: globalStyle['space-top'] + 5,
   },
-  notificationImage: {
-    height: globalStyle.height + 80,
-    width: '100%',
-    borderRadius: globalStyle['border-radius'],
+  scrollHorizontal: {
+    flexDirection: 'row',
   },
 });

@@ -12,7 +12,8 @@ export const styles = StyleSheet.create({
     height: globalStyle.height + 80,
     width: '100%',
     borderRadius: globalStyle['border-radius'],
-    ...globalStyle['shadow-effect'],
+    // ...globalStyle['shadow-effect'],
+    elevation: 1,
     marginBottom: globalStyle['space-bottom'] + 5,
   },
   bannerImage: {
@@ -47,5 +48,24 @@ export const styles = StyleSheet.create({
   },
   scrollHorizontal: {
     flexDirection: 'row',
+  },
+  viewcartBtn: {
+    width: '95%',
+    height: globalStyle['height'] + 10,
+    borderRadius: globalStyle['border-radius'],
+    backgroundColor: color['primary-color'],
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    bottom: globalStyle['space-bottom'] + 5,
+    zIndex: 1,
+  },
+  viewcartBtnTxt: {
+    fontSize: globalStyle['fontsize-large'],
+    fontFamily: globalStyle['fontfamily-medium'],
+    color: color['white-color'],
+  },
+  viewCartBtnAlign: {
+    alignItems: 'center',
   },
 });

@@ -10,10 +10,12 @@ import ForgotPassword from '../screens/forgotpassword';
 import ChangePassword from '../screens/changepassword';
 import VerifyOtp from '../screens/verifyotp';
 import Notification from '../screens/notification';
+import ProductListing from '../screens/productListing';
 import TabBar from './tabBar';
 
 const backButton = (navigation, specificColor) => (
-  <View style={{marginRight: specificColor === 'white' ? 10 : 0}}>
+  <View
+    style={{marginRight: specificColor === 'white' ? 10 : 0, marginLeft: -5}}>
     <Icons
       type={'AntDesign'}
       onPress={() => navigation.goBack()}
@@ -33,8 +35,8 @@ const screenOptions = navigation => ({
   headerLeft: () => backButton(navigation),
 });
 
-const notificationScreen = navigation => ({
-  title: 'Notification',
+const optionsScreen = (title, navigation) => ({
+  title: title,
   headerTitleStyle: {
     fontFamily: globalStyle['fontfamily-bold'],
     color: color['white-color'],
@@ -63,9 +65,16 @@ function Navigation() {
         <Stack.Screen name="verifyotp" component={VerifyOtp} />
         <Stack.Screen name="changepassword" component={ChangePassword} />
         <Stack.Screen
-          options={({navigation}) => notificationScreen(navigation)}
+          options={({navigation}) => optionsScreen('Notification', navigation)}
           name="notification"
           component={Notification}
+        />
+        <Stack.Screen
+          options={({route, navigation}) =>
+            optionsScreen(route.params.title, navigation)
+          }
+          name="productlisting"
+          component={ProductListing}
         />
         <Stack.Screen
           options={{headerShown: false}}

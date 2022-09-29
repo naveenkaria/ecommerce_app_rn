@@ -25,10 +25,4 @@ export const styles = StyleSheet.create({
     fontSize: globalStyle['fontsize-large'] - 3,
     fontFamily: globalStyle['fontfamily-medium'],
   },
-  categoryContanier: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    marginTop: globalStyle['space-top'] + 5,
-  },
 });

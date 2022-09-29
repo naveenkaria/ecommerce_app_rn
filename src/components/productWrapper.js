@@ -29,8 +29,8 @@ export default function ProductWrapper() {
 
 const styles = StyleSheet.create({
   container: {
-    width: 160,
-    height: globalStyle['height'] + 140,
+    width: 180,
+    height: globalStyle['height'] + 150,
     backgroundColor: color['white-color'],
     borderRadius: globalStyle['border-radius'],
     padding: 8,

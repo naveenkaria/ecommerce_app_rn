@@ -3,7 +3,6 @@ import {View, TextInput, ScrollView} from 'react-native';
 import {color, Icons} from '../../consts';
 import {styles} from './style';
 
-import SearchCategoryWrapper from '../../components/searchCategoryWrapper';
 import FavSearchProductWrapper from '../../components/fav_search_product_wrapper';
 
 export default function Search() {
@@ -18,13 +17,6 @@ export default function Search() {
             size={20}
           />
           <TextInput placeholder="Search" style={styles.searchInput} />
-        </View>
-
-        <View style={styles.categoryContanier}>
-          <SearchCategoryWrapper />
-          <SearchCategoryWrapper />
-          <SearchCategoryWrapper />
-          <SearchCategoryWrapper />
         </View>
 
         <View>
