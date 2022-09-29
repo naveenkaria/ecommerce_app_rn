@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: color['primary-color'],
-    ...globalStyle['shadow-effect'],
+    // ...globalStyle['shadow-effect'],
+    elevation: 1,
   },
   login_button_text: {
     fontFamily: globalStyle['fontfamily-medium'],
