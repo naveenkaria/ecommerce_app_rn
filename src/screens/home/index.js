@@ -9,7 +9,10 @@ export default function Home({navigation}) {
   return (
     <View style={styles.viewCartBtnAlign}>
       {/* view cart button start */}
-      <TouchableOpacity activeOpacity={0.9} style={styles.viewcartBtn}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('cart')}
+        activeOpacity={0.9}
+        style={styles.viewcartBtn}>
         <Text style={styles.viewcartBtnTxt}>View Cart</Text>
       </TouchableOpacity>
       {/* view cart button start */}
