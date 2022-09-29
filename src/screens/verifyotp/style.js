@@ -58,6 +58,8 @@ const styles = StyleSheet.create({
     fontSize: globalStyle['fontsize-Xlarge'],
     color: color['black-color'],
     marginHorizontal: globalStyle['margin-horizontal'] - 1,
+    backgroundColor: color['white-color'],
+    elevation: 1,
   },
   login_button: {
     height: globalStyle['height'] + 10,
@@ -67,7 +69,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: color['primary-color'],
     marginVertical: globalStyle['margin-vertical'],
-    ...globalStyle['shadow-effect'],
+    // ...globalStyle['shadow-effect'],
+    elevation: 1,
   },
   login_button_text: {
     fontFamily: globalStyle['fontfamily-medium'],
