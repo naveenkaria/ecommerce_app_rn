@@ -51,7 +51,8 @@ const screenOptions = {
   tabBarStyle: {
     height: globalStyle['height'] + 5,
     paddingBottom: globalStyle['space-bottom'],
-    ...globalStyle['shadow-effect'],
+    // ...globalStyle['shadow-effect'],
+    elevation: 1,
   },
   tabBarLabelStyle: {
     fontSize: globalStyle['fontsize-medium'] - 3,
@@ -67,7 +68,8 @@ const screenOptions = {
   },
   headerStyle: {
     backgroundColor: color['primary-color'],
-    ...globalStyle['shadow-effect'],
+    // ...globalStyle['shadow-effect'],
+    elevation: 1,
   },
 };
 

@@ -56,10 +56,10 @@ export default function Home({navigation}) {
               showsHorizontalScrollIndicator={false}
               horizontal
               style={styles.scrollHorizontal}>
-              <ProductWrapper />
-              <ProductWrapper />
-              <ProductWrapper />
-              <ProductWrapper />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
             </ScrollView>
             <View style={styles.divider} />
             {/* Best Selling */}
@@ -71,10 +71,10 @@ export default function Home({navigation}) {
               showsHorizontalScrollIndicator={false}
               horizontal
               style={styles.scrollHorizontal}>
-              <ProductWrapper />
-              <ProductWrapper />
-              <ProductWrapper />
-              <ProductWrapper />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
             </ScrollView>
             <View style={styles.divider} />
             {/* Groceries */}
@@ -86,10 +86,10 @@ export default function Home({navigation}) {
               showsHorizontalScrollIndicator={false}
               horizontal
               style={styles.scrollHorizontal}>
-              <ProductWrapper />
-              <ProductWrapper />
-              <ProductWrapper />
-              <ProductWrapper />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
+              <ProductWrapper currenyScreen={'home'} />
             </ScrollView>
           </View>
         </View>

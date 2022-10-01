@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   },
   iconButton: {
     borderWidth: 1,
-    borderColor: color['background-color'],
+    borderColor: color['primary-color'],
     borderRadius: globalStyle['border-radius'],
   },
   qtyText: {

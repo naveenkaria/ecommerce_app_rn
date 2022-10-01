@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, ScrollView} from 'react-native';
+import {View} from 'react-native';
 import {styles} from './style';
 
 import ProductWrapper from '../../components/productWrapper';
@@ -14,13 +14,10 @@ export default function ProductListing() {
         <SearchCategoryWrapper />
       </View>
       {/* product listing */}
-      <ScrollView
-        showsHorizontalScrollIndicator={false}
-        horizontal
-        style={styles.scrollHorizontal}>
+      <View style={styles.categoryContanier}>
         <ProductWrapper />
         <ProductWrapper />
-      </ScrollView>
+      </View>
     </View>
   );
 }

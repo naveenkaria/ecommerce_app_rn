@@ -2,9 +2,16 @@ import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 import {color, globalStyle, Icons} from '../consts';
 
-export default function ProductWrapper() {
+export default function ProductWrapper({currenyScreen}) {
   return (
-    <View style={styles.container}>
+    <View
+      style={[
+        styles.container,
+        {
+          marginRight:
+            currenyScreen === 'home' ? globalStyle['space-right'] + 5 : 0,
+        },
+      ]}>
       <Image
         resizeMode="cover"
         style={styles.productImage}
@@ -37,7 +44,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginVertical: globalStyle['margin-vertical'],
-    marginRight: globalStyle['space-right'] + 5,
     borderWidth: 1,
     borderColor: color['border-color'],
   },

@@ -8,10 +8,4 @@ export const styles = StyleSheet.create({
     paddingHorizontal: globalStyle['padding-horizontal'],
     backgroundColor: color['background-color'],
   },
-  categoryContanier: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    marginTop: globalStyle['space-top'] + 5,
-  },
 });

@@ -11,6 +11,9 @@ import ChangePassword from '../screens/changepassword';
 import VerifyOtp from '../screens/verifyotp';
 import Notification from '../screens/notification';
 import ProductListing from '../screens/productListing';
+import Checkout from '../screens/checkout';
+import Wallet from '../screens/wallet';
+import Address from '../screens/address';
 import TabBar from './tabBar';
 
 const backButton = (navigation, specificColor) => (
@@ -75,6 +78,25 @@ function Navigation() {
           }
           name="productlisting"
           component={ProductListing}
+        />
+        <Stack.Screen
+          options={({route, navigation}) =>
+            optionsScreen('Checkout', navigation)
+          }
+          name="checkout"
+          component={Checkout}
+        />
+        <Stack.Screen
+          options={({route, navigation}) => optionsScreen('Wallet', navigation)}
+          name="wallet"
+          component={Wallet}
+        />
+        <Stack.Screen
+          options={({route, navigation}) =>
+            optionsScreen('Address', navigation)
+          }
+          name="address"
+          component={Address}
         />
         <Stack.Screen
           options={{headerShown: false}}

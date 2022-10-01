@@ -7,6 +7,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Feather from 'react-native-vector-icons/Feather';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Octicons from 'react-native-vector-icons/Octicons';
 
 export default function Icons({type, name, color, size, onPress, style}) {
   switch (type) {
@@ -73,6 +74,16 @@ export default function Icons({type, name, color, size, onPress, style}) {
         />
       );
     case 'Ionicons':
+      return (
+        <Ionicons
+          onPress={onPress}
+          name={name}
+          color={color}
+          size={size}
+          style={style}
+        />
+      );
+    case 'Octicons':
       return (
         <Ionicons
           onPress={onPress}

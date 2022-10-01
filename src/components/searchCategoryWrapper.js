@@ -18,7 +18,7 @@ export default function SearchCategoryWrapper() {
 const styles = StyleSheet.create({
   container: {
     width: 180,
-    height: globalStyle['height'] + 140,
+    height: globalStyle['height'] + 150,
     backgroundColor: color['white-color'],
     borderRadius: globalStyle['border-radius'],
     padding: 8,
