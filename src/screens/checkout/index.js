@@ -8,9 +8,18 @@ import {
 } from 'react-native';
 import {styles} from './style';
 import CartWrapper from '../../components/cartWrapper';
-import {color, Icons} from '../../consts';
+import {color, Icons, Permissions} from '../../consts';
 
 export default function Checkout({navigation}) {
+  async function addressScreen() {
+    const chckLocationPermission =
+      await Permissions.requestLocationPermission();
+    if (chckLocationPermission) {
+      navigation.navigate('address');
+    }
+    return;
+  }
+
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -27,7 +36,7 @@ export default function Checkout({navigation}) {
               Saddar Town, Karachi, Pakistan
             </Text>
             <Icons
-              onPress={() => navigation.navigate('address')}
+              onPress={() => addressScreen()}
               type={'Feather'}
               name={'edit'}
               color={color['primary-color']}

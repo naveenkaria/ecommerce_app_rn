@@ -93,7 +93,7 @@ function Navigation() {
         />
         <Stack.Screen
           options={({route, navigation}) =>
-            optionsScreen('Address', navigation)
+            optionsScreen('Add Location', navigation)
           }
           name="address"
           component={Address}

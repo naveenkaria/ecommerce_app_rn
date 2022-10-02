@@ -2,8 +2,11 @@ import React from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {color} from './src/consts';
+import {enableLatestRenderer} from 'react-native-maps';
 
 import Navigation from './src/navigations';
+
+enableLatestRenderer();
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
