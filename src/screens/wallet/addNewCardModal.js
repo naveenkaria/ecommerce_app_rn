@@ -20,17 +20,12 @@ export default function AddNewCardModal({isVisible, setVisible}) {
         style={styles.container}
         onPress={() => setVisible(!isVisible)}>
         <View style={styles.contentContainer}>
+          <Text style={styles.extraTxt}>Add New Card</Text>
           <TextInput placeholder="Card Holder Name" style={styles.input} />
           <View style={styles.divider} />
           <TextInput placeholder="Card Number" style={styles.input} />
           <View style={styles.divider} />
-          <View
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              width: '100%',
-            }}>
+          <View style={styles.input2Alignment}>
             <TextInput placeholder="Expiry Date" style={styles.input2} />
             <TextInput placeholder="CVV" style={styles.input2} />
           </View>
@@ -54,11 +49,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   contentContainer: {
+    height: 320,
     width: '90%',
     backgroundColor: '#fff',
     borderRadius: globalStyle['border-radius'],
-    alignItems: 'center',
-    justifyContent: 'center',
     paddingHorizontal: globalStyle['padding-horizontal'],
     paddingVertical: globalStyle['padding-vertical'],
   },
@@ -98,5 +92,18 @@ const styles = StyleSheet.create({
     fontSize: globalStyle['fontsize-medium'] + 1,
     fontFamily: globalStyle['fontfamily-medium'],
     color: color['white-color'],
+  },
+  input2Alignment: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
+  extraTxt: {
+    fontSize: globalStyle['fontsize-large'],
+    fontFamily: globalStyle['fontfamily-medium'],
+    color: color['black-color'],
+    marginVertical: globalStyle['margin-vertical'],
+    textAlign: 'left',
   },
 });
