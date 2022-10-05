@@ -84,7 +84,10 @@ export default function TabBar() {
         barStyle={!isDarkMode ? 'light-content' : 'dark-content'}
       />
 
-      <Tab.Navigator initialRouteName="home" screenOptions={screenOptions}>
+      <Tab.Navigator
+        initialRouteName="home"
+        backBehavior="none"
+        screenOptions={screenOptions}>
         <Tab.Screen
           name="favorite"
           component={Favorite}
