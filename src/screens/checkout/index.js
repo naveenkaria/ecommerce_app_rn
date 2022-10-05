@@ -40,7 +40,7 @@ export default function Checkout({navigation}) {
               type={'Feather'}
               name={'edit'}
               color={color['primary-color']}
-              size={20}
+              size={22}
             />
           </View>
         </View>
@@ -62,7 +62,7 @@ export default function Checkout({navigation}) {
               type={'Feather'}
               name={'edit'}
               color={color['primary-color']}
-              size={20}
+              size={22}
             />
           </View>
         </View>
@@ -88,7 +88,7 @@ export default function Checkout({navigation}) {
             </View>
           </View>
           <TouchableOpacity activeOpacity={0.8} style={styles.orderbtn}>
-            <Text style={styles.orderBtnTxt}>Proceed to order</Text>
+            <Text style={styles.orderBtnTxt}>Proceed to Order</Text>
           </TouchableOpacity>
         </View>
       </View>
